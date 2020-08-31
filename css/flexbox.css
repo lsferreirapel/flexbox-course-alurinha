@@ -1,0 +1,154 @@
+/** Header **/
+
+/* Cabecalho principal */
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalhoPrincipal-nav {
+   display: flex;
+}
+
+/* Cabecalho principal mobile setup */
+@media (max-width: 769px) {
+    .cabecalhoPrincipal .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: initial;
+        text-align: center;
+    }
+    .cabecalhoPrincipal-nav {
+       display: flex;
+       flex-direction: column;
+    }
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
+    }
+}
+/** --------------- Header End --------------- **/
+
+
+/** Conteudo Principal **/
+
+/* Cursos */
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+/* Cursos mobile setup */
+@media (max-width: 769px) {
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+    }
+    .conteudoPrincipal-cursos-link {
+        width: 98%;
+        margin: 1%;
+    }
+}
+/** --------------- Conteudo Principal End --------------- **/
+
+
+/** Video Sobre **/
+
+.videoSobre .container {
+    display: flex;
+}
+
+/* video */
+.videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+/* sobre */
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+/* Video Sobre mobile setup */
+@media (max-width: 769px) {
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        margin: 0 auto;
+    }
+
+}
+/** --------------- Video Sobre End --------------- **/
+
+
+/** Footer **/
+
+/* Footer navMap */
+.rodapePrincipal-navMap-list {
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+    height: 250px;
+}
+/* Footer navMap mobile setup */ 
+@media (max-width: 769px) {
+    .rodapePrincipal-navMap-list {
+        height: initial;
+    }
+}
+
+/* Footer patrocinadores */
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    flex: .70;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Footer contato */
+.rodapePrincipal-contatoForm {
+    flex: .25;
+}
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+/* Footer patrocinadores mobile setup */ 
+@media (max-width: 769px) {
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+    }
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+}
+/** --------------- Footer End --------------- **/
